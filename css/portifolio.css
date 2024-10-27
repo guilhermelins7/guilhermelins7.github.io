@@ -51,7 +51,6 @@
 }
 
 .portifolio-layer h3 {
-    font-size: 1.8rem;
     color: var(--text-color);
 }
 
@@ -65,15 +64,32 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 3rem;
-    height: 3rem;
     background: var(--text-color);
     border-radius: 50%;
 }
 
 .portifolio-layer a i {
-    font-size: 1.2rem;
     color: var(--background-color-02);
+}
+
+/* Extra Small (xs): SmartPhone (portrait) */
+@media (min-width: 0px) {
+    .portifolio-layer h3 {
+        font-size: 1.5rem;
+    }
+    
+    .portifolio-layer p {
+        font-size: 0.6rem;
+    }
+
+    .portifolio-layer a {
+        width: 2rem;
+        height: 2rem;
+    }
+    
+    .portifolio-layer a i {
+        font-size: 1rem;
+    }
 }
 
 /* Medium (md): Tablet */
@@ -82,6 +98,23 @@
         /* Altrerar grid de acordo com colunas */
         /* grid-template-columns: auto auto auto; */
         grid-template-columns: auto;
+    }
+
+    .portifolio-layer h3 {
+        font-size: 1.8rem;
+    }
+
+    .portifolio-layer p {
+        font-size: 1rem;
+    }
+
+    .portifolio-layer a {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .portifolio-layer a i {
+        font-size: 1.2rem;
     }
 }
 
