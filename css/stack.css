@@ -1,0 +1,75 @@
+@import url(main.css);
+
+.stack h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.stack-container {
+    display: flex;
+}
+
+.stack-box {
+    padding: 2rem 1rem 2.5rem;
+    border-radius: 1.2rem;
+    text-align: center;
+    border: solid 0.15rem var(--background-color-02);
+    transform: 0.5s ease;
+
+    /* display: flex; */
+    /* flex-direction: column; */
+    justify-content: space-between;
+    min-height: 25rem;
+    margin-bottom: 1rem;
+}
+
+.stack-box:hover {
+    border-color: var(--main-color);
+
+    transform: scale(1.02);
+}
+
+.stack-box i {
+    display: inline;
+    justify-content: space-between;
+    font-size: 4.3rem;
+    color: var(--main-color);
+    margin: 0.5rem;
+}
+
+.stack-box h3 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Extra Small (xs): SmartPhone (portrait) */
+@media (min-width: 0px) {
+    .stack-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stack-box {
+        width: 100%;
+    }
+}
+
+/* Medium (md): Tablet */
+@media (min-width: 768px) {
+    .stack-box {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+}
+
+/* Large (lg): Notebook */
+@media (min-width: 992px) {
+    .stack-container {
+        flex-direction: row;
+        gap: 1.2rem;
+        align-items: center; /* centraliza verticalmente */
+        height: 100vh; /* altura do viewport */
+    }
+}

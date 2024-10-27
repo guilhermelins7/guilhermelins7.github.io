@@ -1,0 +1,98 @@
+@import url(main.css);
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-img {
+    border: solid 0.3rem;
+    border-color: var(--main-color);
+}
+
+.about-img img {
+    width: 100%;
+}
+
+.about {
+    background-color: var(--background-color-02);
+}
+
+.about-content {
+    width: 45%;
+}
+
+.about-content p {
+    margin-top: 1.2rem;
+}
+
+/* Extra Small (xs): SmartPhone (portrait) */
+@media (min-width: 0px) {
+    .about {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .about-content {
+        width: 100%;
+    }
+
+    .about-content h3 {
+        font-size: 2rem;
+    }
+
+    .about-img {
+        width: 65%;
+    }
+}
+
+
+/* Small (sm): (landscape) */
+@media (min-width: 576px) {
+    .about-img {
+        width: 55%;
+        height: 55%;
+    }
+}
+
+/* Medium (md): Tablet */
+@media (min-width: 768px) {
+    .about {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .about-content h3 {
+        font-size: 2.5rem;
+    }
+
+    .about-img {
+        max-width: 40%;
+    }
+
+    .about-content {
+        width: 50%;
+    }
+}
+
+/* Large (lg): Notebook */
+@media (min-width: 992px) {
+
+    .about-content h3 {
+        font-size: 3rem;
+    }
+}
+
+/* Extra Large (xl): Desktop */
+@media (min-width: 1200px) {
+
+    .about-img {
+        max-width: 25%;
+    }
+    
+    .about-content h3 {
+        font-size: 3.5rem;
+    }
+}

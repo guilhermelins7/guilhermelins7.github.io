@@ -1,0 +1,84 @@
+@import url(main.css);
+
+header {
+    position: fixed ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.1rem;
+    background-color: var(--background-color-01);
+
+    /* alinhar elementos lado a lado */
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 100;
+
+    /* border: solid 1px var(--extra-02); Manutenção  */
+}
+
+.logo {
+    height: 2rem;
+    width: auto;
+}
+
+.nav-responsive {
+    display: none;
+    position: absolute;
+    top:  100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--background-color-01);
+}
+
+/* Altrando links de navigator */
+.nav a, .nav-responsive a {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    transition: 0.4s;
+    font-weight: bold;
+
+    /* border: solid 1px var(--extra-02); Manutenção */
+}
+
+.nav a:hover, .nav-responsive a:hover {
+    color: var(--main-color);
+}
+
+@media (min-width: 0px) {
+    header {
+        /* background-color: var(--extra-01); Manutenção */
+    }
+}
+
+/* Small (sm): (landscape) */
+@media (min-width: 576px) {
+    header {
+        /* background-color: var(--extra-02); Manutenção */
+    }
+}
+
+/* Medium (md): Tablet */
+@media (min-width: 768px) {
+    header {
+        /* background-color: var(--extra-03); Manutenção */
+    }
+}
+
+/* Large (lg): Notebook */
+@media (min-width: 992px) {
+    header {
+        /* background-color: var(--extra-04); Manutenção */
+    }
+}
+
+/* Extra Large (xl): Desktop */
+@media (min-width: 1200px) {
+    header {
+        /* background-color: var(--extra-05); Manutenção */
+    }
+}
