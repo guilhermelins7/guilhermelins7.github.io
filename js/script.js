@@ -1,4 +1,4 @@
-// Tranformar menu hamburguer em X
+// Transformar menu hamburguer em X
 
 const menuHamburguer = document.querySelector('.menu-hamburguer');
 
