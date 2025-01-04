@@ -9,7 +9,8 @@
     --color-00: #0000001a;
 
     /* futuro tema claro: */
-/* 
+
+    /* 
     --main-color: #343a40;
     --text-color: #212529;
     --background-color-01: #dee2e6;
@@ -117,7 +118,7 @@ footer {
     transform:  translate(0, -0.65rem) rotate(45deg);
 }
 
-/* Medium (md): Tablet */
+/* Tablet */
 @media (min-width: 768px) {
     .menu-hamburguer {
         display: none;
