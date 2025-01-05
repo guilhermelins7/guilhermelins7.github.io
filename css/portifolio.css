@@ -52,12 +52,14 @@
 
 .portifolio-layer h3 {
     color: var(--text-color);
+    font-size: 1.5rem;
 }
 
 .portifolio-layer p {
     margin: 0.2rem 0 0.5rem;
     color: var(--text-color);
     font-weight: bold;
+    font-size: 0.6rem;
 }
 
 .portifolio-layer a {
@@ -66,30 +68,13 @@
     align-items: center;
     background: var(--text-color);
     border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
 }
 
 .portifolio-layer a i {
     color: var(--background-color-02);
-}
-
-/* Extra Small (xs): SmartPhone (portrait) */
-@media (min-width: 0px) {
-    .portifolio-layer h3 {
-        font-size: 1.5rem;
-    }
-    
-    .portifolio-layer p {
-        font-size: 0.6rem;
-    }
-
-    .portifolio-layer a {
-        width: 2rem;
-        height: 2rem;
-    }
-    
-    .portifolio-layer a i {
-        font-size: 1rem;
-    }
+    font-size: 1rem;
 }
 
 /* Medium (md): Tablet */
