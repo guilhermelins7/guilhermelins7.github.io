@@ -8,7 +8,16 @@
 }
 
 .home-content {
-    width: 45%;
+    width: 100%;
+    text-align: center;
+}
+
+.home-content h1 {
+    font-size: 2.4rem;
+}
+
+.home-content h3 {
+    font-size: 1.5rem;
 }
 
 .home-links {
@@ -26,11 +35,6 @@
     width: 3.5rem;
 }
 
-/* .curriculum {
-    align-items: center;
-    justify-content: center;
-} */
-
 .social-media a {
     display: inline-flex;
     justify-content: center;
@@ -43,7 +47,7 @@
 
     font-size: 2rem;
     color: var(--main-color);
-    margin: 1.8rem 1rem 1.8rem 0;
+    margin: 0.5rem;
     transition: 0.5s ease;
 }
 
@@ -55,34 +59,8 @@
 
 .home-links .btn {
     margin-top: 0rem;
-}
-
-/* Extra Small (xs): SmartPhone (portrait) */
-@media (min-width: 0px) {
-    .home-content {
-        width: 100%;
-    }
-
-    .home-content {
-        text-align: center;
-    }
-
-    .home-content h1 {
-        font-size: 2.5rem;
-    }
-
-    .home-content h3 {
-        font-size: 1.6rem;
-    }
-
-    .social-media a {
-        margin: 0.5rem;
-    }
-
-    .home-links .btn {
-        padding: 0.7rem 1rem;    
-        letter-spacing: 0.05rem;
-    }
+    padding: 0.7rem 1rem;    
+    letter-spacing: 0.05rem;
 }
 
 /* Medium (md): Tablet */
