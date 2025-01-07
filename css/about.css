@@ -8,6 +8,14 @@
     align-items: center;
 }
 
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
 
 .about-img {
     border: solid 0.3rem;
@@ -24,6 +32,7 @@
 }
 
 .about-content {
+    align-self: flex-start;
     width: 100%;
 }
 
@@ -32,53 +41,86 @@
 }
 
 .about-content p {
+    font-size: 1rem;
     margin-top: 1.2rem;
 }
 
-/* Small (sm): (landscape) */
-@media (min-width: 576px) {
-    .about-img {
-        width: 55%;
-        height: 55%;
-    }
-}
-
-/* Medium (md): Tablet */
-@media (min-width: 768px) {
-    .about {
+/* Tablet */
+@media (min-width: 481px) {
+    .about-container {
         flex-direction: row;
-        justify-content: space-evenly;
+        max-width: 90%;
+        gap: 2rem;
     }
 
     .about-content h3 {
         font-size: 2.5rem;
     }
+    
+    .about-content p {
+        margin-top: 1.4rem;
+    }
+}
+
+/* Laptop */
+@media (min-width: 771px) {
+    .about {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .about-content p {
+        margin-top: 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    .about-img {
+        max-width: 55%;
+    }
+
+    /* .about-content {
+        max-width: 50%;
+    } */
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+
+    .about-container {
+        max-width: 85%;
+    }
+
+    .about-content h3 {
+        font-size: 4rem;
+    }
+
+    .about-content p {
+        margin-top: 2rem;
+        font-size: 1.4rem;
+    }
 
     .about-img {
         max-width: 40%;
     }
-
-    .about-content {
-        width: 50%;
-    }
 }
 
-/* Large (lg): Notebook */
-@media (min-width: 992px) {
+/* Ultrawide */
+@media (min-width: 1525px) {
 
+    .about-container {
+        max-width: 60%;
+        gap: 5rem;
+    }
     .about-content h3 {
-        font-size: 3rem;
+        font-size: 5rem;
     }
-}
 
-/* Extra Large (xl): Desktop */
-@media (min-width: 1200px) {
+    .about-content p {
+        margin-top: 3rem;
+        font-size: 1.6rem;
+    }
 
     .about-img {
         max-width: 25%;
-    }
-    
-    .about-content h3 {
-        font-size: 3.5rem;
     }
 }
