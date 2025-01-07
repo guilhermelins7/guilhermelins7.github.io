@@ -17,6 +17,7 @@
 
 .portfolio-container {
     display: grid;
+    text-align: center;
     gap: 1.2rem;
 }
 
@@ -53,13 +54,13 @@
     align-items: center;
     text-align: center;
     padding: 0 .5rem;
-    transform: translateY(1000px);
+    transform: translateY(11rem);
     transition: height 0.5s;
 }
 
 .portfolio-box:hover .portfolio-layer{
     height: 100%;
-    transform: translateY(0px);
+    transform: translateY(0rem);
 }
 
 .portfolio-layer h3 {
@@ -96,16 +97,33 @@
     font-size: 1.4rem;
 }
 
-/* Medium (md): Tablet */
-@media (min-width: 768px) {
+/* Tablet */
+@media (min-width: 481px) {
     .portfolio-container {
         /* Altrerar grid de acordo com colunas */
-        /* grid-template-columns: auto auto auto; */
-        grid-template-columns: auto;
+        grid-template-columns: auto auto;
+        /* grid-template-columns: auto; */
+    }
+
+    .portfolio h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1.4rem;
+    }
+}
+
+/* Laptop */
+@media (min-width: 771px) {
+    .portfolio h2 {
+        font-size: 2rem;
+        margin-bottom: 1.6rem;
+    }
+
+    .portfolio-layer {
+        gap: .5rem;
     }
 
     .portfolio-layer h3 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .portfolio-layer p {
@@ -116,16 +134,47 @@
         width: 3rem;
         height: 3rem;
     }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+    .portfolio h2 {
+        font-size: 2.2rem;
+    }
+
+    .portfolio-container {
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: auto auto auto;
+    }
+
+    .portfolio-layer {
+        gap: 1rem;
+    }
 
     .portfolio-layer a i {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
+    }
+
+    .portfolio-box {
+        height: 20rem;
+        width: 20rem;
     }
 }
-/* Extra Large (xl): Desktop */
-@media (min-width: 1200px) {
-    .portfolio-container {
-        display: flex;
-        grid-template-columns: auto auto auto;
-        align-items: center;
+
+/* Ultrawide */
+@media (min-width: 1525px) {
+    .portfolio h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1.8rem;
+    }
+
+    .portfolio-layer a i {
+        font-size: 1.6rem;
+    }
+
+    .portfolio-box {
+        height: 25rem;
+        width: 25rem;
     }
 }
