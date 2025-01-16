@@ -8,8 +8,11 @@
 }
 
 .home-content {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     text-align: center;
+    gap: .2rem;
 }
 
 .home-content h1 {
@@ -17,13 +20,16 @@
 }
 
 .home-content h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
-.home-links {
+.home .home-links {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
+    padding: 1rem;
 }
 
 .social-media {
@@ -39,8 +45,8 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
     background: transparent;
     border:  solid 0.15rem var(--main-color);
     border-radius: 50%;
@@ -59,12 +65,26 @@
 
 .home-links .btn {
     margin-top: 0rem;
-    padding: 0.7rem 1rem;    
+    font-size: 1rem;
+    padding: 1rem 1.5rem;    
     letter-spacing: 0.05rem;
 }
 
 /* Medium (md): Tablet */
 @media (min-width: 768px) {
+    .home {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .home .home-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 75%;
+    }
+
     .home-content h1 {
         font-size: 4.3rem;
         line-height: 1.3rem;
@@ -75,13 +95,9 @@
         font-size: 2.5rem;
     }
 
-    .home {
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
-    .home-content {
-        width: 75%;
+    .home-links {
+        gap: 1.5rem;
+        padding: 1.5rem;
     }
 
     .home-links .btn {
