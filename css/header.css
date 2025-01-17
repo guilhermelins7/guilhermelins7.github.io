@@ -41,8 +41,6 @@ header {
     padding: 0.5rem 1rem;
     transition: 0.4s;
     font-weight: bold;
-
-    /* border: solid 1px var(--extra-02); Manutenção */
 }
 
 .nav a:hover, .nav-responsive a:hover {
@@ -51,34 +49,42 @@ header {
 
 @media (min-width: 0px) {
     header {
-        /* background-color: var(--extra-01); Manutenção */
     }
 }
 
 /* Small (sm): (landscape) */
 @media (min-width: 576px) {
     header {
-        /* background-color: var(--extra-02); Manutenção */
     }
 }
 
 /* Medium (md): Tablet */
 @media (min-width: 768px) {
     header {
-        /* background-color: var(--extra-03); Manutenção */
     }
 }
 
 /* Large (lg): Notebook */
 @media (min-width: 992px) {
-    header {
-        /* background-color: var(--extra-04); Manutenção */
+    .logo {
+        height: 4.5rem;
+        width: auto;
+    }
+
+    .nav a {
+        font-size: 1.5rem;
     }
 }
 
 /* Extra Large (xl): Desktop */
 @media (min-width: 1200px) {
     header {
-        /* background-color: var(--extra-05); Manutenção */
+    }
+}
+
+/* Ultrawide */
+@media (min-width: 1525px) {
+    .nav a {
+        padding: 0.5rem 2rem;
     }
 }
