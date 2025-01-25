@@ -78,8 +78,6 @@ header {
 
 /* Extra Large (xl): Desktop */
 @media (min-width: 1200px) {
-    header {
-    }
 }
 
 /* Ultrawide */
