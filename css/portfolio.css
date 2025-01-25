@@ -10,7 +10,7 @@
 }
 
 .portfolio h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -97,27 +97,17 @@
     font-size: 1.4rem;
 }
 
-/* Tablet */
+/* Landscape */
 @media (min-width: 481px) {
     .portfolio-container {
         /* Altrerar grid de acordo com colunas */
         grid-template-columns: auto auto;
         /* grid-template-columns: auto; */
     }
-
-    .portfolio h2 {
-        font-size: 1.8rem;
-        margin-bottom: 1.4rem;
-    }
 }
 
-/* Laptop */
-@media (min-width: 771px) {
-    .portfolio h2 {
-        font-size: 2rem;
-        margin-bottom: 1.6rem;
-    }
-
+/* Tablet */
+@media (min-width: 768px) {
     .portfolio-layer {
         gap: .5rem;
     }
@@ -137,9 +127,10 @@
 }
 
 /* Desktop */
-@media (min-width: 1025px) {
+@media (min-width: 1200px) {
     .portfolio h2 {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
     }
 
     .portfolio-container {
@@ -164,11 +155,6 @@
 
 /* Ultrawide */
 @media (min-width: 1525px) {
-    .portfolio h2 {
-        font-size: 2.5rem;
-        margin-bottom: 1.8rem;
-    }
-
     .portfolio-layer a i {
         font-size: 1.6rem;
     }
