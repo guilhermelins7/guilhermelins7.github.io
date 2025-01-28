@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    text-align: center;
+    text-align: start;
     gap: .2rem;
 }
 
@@ -23,10 +23,55 @@
     font-size: 1.4rem;
 }
 
+.home .home-content .dig {
+    position: relative;
+}
+
+/* Criar elemento dinâmico */
+.home .home-content .dig::before {
+    content: "";
+    animation: words 8.8s infinite;
+}
+
+@keyframes words {
+    0%, 50% {
+        content: "Desenvolvedor de Software";
+    }
+    51%, 100% {
+        content: "Estudante de S.I";
+    }
+}
+
+.home .home-content .dig::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: .1rem solid var(--main-color);
+    right: -.3rem;
+    animation: cursor .8s infinite, digitar 22s steps(15) infinite;
+    width: calc(100% + .6rem); /* deixar elemento no inicio */
+    background-color: var(--background-color-01);
+}
+
+@keyframes cursor {
+    0% {
+        border-left: .1rem solid var(--background-color-01);
+    }
+}
+
+@keyframes digitar {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+        width: calc(100% + .6rem); /* deixar elemento no inicio */
+    }
+}
+
 .home .home-links {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
     gap: 1rem;
     padding: 1rem;
@@ -34,26 +79,24 @@
 
 .home-links .btn {
     margin-top: 0rem;
-    font-size: 1rem;
-    padding: 1rem 1.5rem;    
+    font-size: .8rem;
+    padding: .8rem .5rem;    
     letter-spacing: 0.05rem;
 }
 
 .social-media {
+    display: flex;
+    justify-content: flex-start;
     align-items: left;
     justify-content: left;
-}
-
-.social-media img {
-    width: 3.5rem;
 }
 
 .social-media a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 3rem;
-    height: 3rem;
+    width: 2.6rem;
+    height: 2.6rem;
     background: transparent;
     border:  solid 0.15rem var(--main-color);
     border-radius: 50%;
