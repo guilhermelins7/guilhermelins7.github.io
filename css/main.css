@@ -2,19 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
 :root {
-    --main-color: #0ef;
-    --text-color: #fff;
-    --background-color-01: #15191e;
-    --background-color-02: #2b333c;
-    --color-00: #0000001a;
-
-    /* futuro tema claro: */
-
-    /* 
-    --main-color: #343a40;
-    --text-color: #212529;
-    --background-color-01: #dee2e6;
-    --background-color-02: #e9ecef; */
+    --main-color: #82AAFF;
+    --text-color: #d6deeb;
+    --background-color-01: #011627;
+    --background-color-02: #1D3B53;
 }
 
 /* Seletor universal:  */
