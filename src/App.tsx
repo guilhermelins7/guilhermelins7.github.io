@@ -1,5 +1,6 @@
 import Header from "./sections/Header"
 import Hero from "./sections/Hero"
+import Sobre from "./sections/Sobre"
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <Header/>
       <Hero/>
+      <Sobre/>
     </>
   )
 }
