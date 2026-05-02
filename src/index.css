@@ -1,1 +1,41 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-primary: #C21F1F;
+  --color-background-light: #FFFFFF;
+  --color-background-dark: #20131F;
+  --color-surface-light: #EEE2ED;
+  --color-surface-dark: #2D1B2E;
+
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #c21f1f;
+  border-radius: 4px;
+}
+.scrolling-text-container {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.scrolling-text {
+  display: inline-block;
+  animation: scroll 20s linear infinite;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

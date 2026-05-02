@@ -1,8 +1,11 @@
+import Header from "./sections/Header"
+import Hero from "./sections/Hero"
+
 function App() {
 
   return (
     <>
-    <h1 className="font-bold">Hello, World</h1>
+      <Header/>
     </>
   )
 }
