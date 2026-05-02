@@ -8,7 +8,7 @@ export default function Header() {
         { label: "Trabalho", href: "#trabalho" },
         { label: "Experiencia", href: "#experiencia" },
         { label: "Skills", href: "#skills" },
-        { label: "Entre em contato", href: "#contato" },
+        { label: "Contato", href: "#contato" },
     ];
 
   return (
