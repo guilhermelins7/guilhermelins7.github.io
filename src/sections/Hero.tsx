@@ -17,7 +17,7 @@ export default function Hero() {
           </div>
         </div>
         <h1 className="text-5xl md:text-8xl font-display font-bold mb-6 tracking-tight leading-tight">
-          <span className="text-primary">Desenvolvedor</span><br/>Full-stack &amp; Mobile
+          Desenvolvedor<br/><span className="text-primary">Full-stack</span>
         </h1>
         <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed">
             Apaixonado por criar soluções inovadoras e experiências digitais excepcionais por meio de tecnologia.
