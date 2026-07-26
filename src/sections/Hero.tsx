@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center pt-24 overflow-hidden">
+    <section className="relative min-h-screen flex flex-col items-center justify-center pt-24 overflow-hidden" id="home">
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
         <div className="absolute top-[-10%] right-[-10%] w-[500px] h-[500px] bg-primary/10 rounded-full blur-[100px]"></div>
         <div className="absolute bottom-[-10%] left-[-10%] w-[500px] h-[500px] bg-surface-light dark:bg-surface-dark rounded-full blur-[100px]"></div>
@@ -25,7 +25,7 @@ export default function Hero() {
         <div className="flex justify-center gap-4">
           <a
             className="group flex items-center gap-2 px-8 py-4 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-full font-medium transition-transform hover:-translate-y-1"
-            href="#works"
+            href="#trabalho"
           >
             Meus projetos
             <span className="material-icons group-hover:translate-x-1 transition-transform text-sm">
@@ -34,7 +34,7 @@ export default function Hero() {
           </a>
           <a
             className="flex items-center gap-2 px-8 py-4 border border-gray-300 dark:border-gray-700 rounded-full font-medium hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
-            href="#contact"
+            href="#contato"
           >
             Entre em contato
           </a>

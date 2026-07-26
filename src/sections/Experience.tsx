@@ -5,7 +5,7 @@ export default function Experience() {
   return (
     <section
       className="py-24 bg-background-light dark:bg-background-dark overflow-hidden"
-      id="experience"
+      id="experiencia"
     >
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row gap-16">
