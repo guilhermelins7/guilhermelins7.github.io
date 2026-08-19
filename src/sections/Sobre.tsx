@@ -1,5 +1,5 @@
 import SectionTitle from "../components/SectionTitle";
-import unisantaLogo from "../assets/unisanta-logopng.png";
+import unisantaLogo from "../assets/logos/unisanta.png";
 
 export default function Sobre() {
   return (

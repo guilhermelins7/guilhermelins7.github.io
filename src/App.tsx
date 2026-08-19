@@ -14,8 +14,8 @@ function App() {
       <Header/>
       <Hero/>
       <Sobre/>
-      <Trabalho/>
       <Experience/>
+      <Trabalho/>
       <Skills/>
       <Certificacoes/>
       <Contato/>

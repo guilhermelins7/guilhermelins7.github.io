@@ -6,8 +6,8 @@ export default function Header() {
     const links = [
         { label: "Home", href: "#home" },
         { label: "Sobre", href: "#sobre" },
-        { label: "Trabalho", href: "#trabalho" },
         { label: "Experiencia", href: "#experiencia" },
+        { label: "Trabalho", href: "#trabalho" },
         { label: "Skills", href: "#skills" },
         { label: "Contato", href: "#contato" },
     ];
@@ -15,7 +15,7 @@ export default function Header() {
     const [activeSection, setActiveSection] = useState<string>("home");
 
     useEffect(() => {
-        const sections = ["home", "sobre", "trabalho", "experiencia", "skills", "contato"];
+        const sections = ["home", "sobre", "experiencia", "trabalho", "skills", "contato"];
         const elements = sections.map(id => document.getElementById(id)).filter(Boolean) as Element[];
 
         if (elements.length === 0) return;
