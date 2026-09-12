@@ -3,11 +3,18 @@ interface CertificationCardProps {
   badge: string;
   title: string;
   issuer: string;
+  href: string;
 }
 
-export default function CertificationCard({ icon, badge, title, issuer }: CertificationCardProps) {
+export default function CertificationCard({ icon, badge, title, issuer, href }: CertificationCardProps) {
   return (
-    <div className="bg-surface-dark p-5 rounded-2xl border border-gray-800 hover:border-primary/50 transition-all duration-300 group hover:-translate-y-1">
+    <a
+      className="block bg-surface-dark p-5 rounded-2xl border border-gray-800 hover:border-primary/50 transition-all duration-300 group hover:-translate-y-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background-dark"
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+      aria-label={`Abrir certificado: ${title}`}
+    >
       <div className="flex items-start justify-between mb-4">
         <span className="material-symbols-outlined text-primary text-3xl">{icon}</span>
         <span className="text-[10px] font-bold text-gray-500 uppercase tracking-widest">
@@ -18,6 +25,6 @@ export default function CertificationCard({ icon, badge, title, issuer }: Certif
         {title}
       </h4>
       <p className="text-sm text-gray-400">{issuer}</p>
-    </div>
+    </a>
   );
 }
