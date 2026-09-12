@@ -43,7 +43,7 @@ export default function Hero() {
       <div className="absolute bottom-10 w-full opacity-5 dark:opacity-10 pointer-events-none select-none">
         <div className="scrolling-text-container">
           <div className="scrolling-text text-[10rem] font-display font-black uppercase text-gray-900 dark:text-white">
-            Plan Develop Review Test Deploy Plan Develop Test Review Deploy
+            TypeScript PHP React .NET Angular Tailwind C# PHP Flutter WordPress Git SQL Server Redis
           </div>
         </div>
       </div>

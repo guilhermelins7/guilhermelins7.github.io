@@ -10,8 +10,8 @@ export default function Contato() {
               É isso por enquanto
             </p>
             <h2 className="text-5xl md:text-7xl font-display font-bold leading-tight mb-8">
-              Tem um projeto em mente? <br />
-              Vamos conversar.
+              Tem um projeto ou proposta em mente? <br />
+              Vamos conversar!
             </h2>
             <div className="flex flex-col sm:flex-row gap-8 mt-12 text-sm text-gray-600 dark:text-gray-400">
               <div>
@@ -45,7 +45,7 @@ export default function Contato() {
         <hr className="border-gray-300 dark:border-gray-800 mb-12" />
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400">
-            your friendly chaos creator
+            your friendly creative dev,
           </p>
           <div className="flex gap-4">
             <a
