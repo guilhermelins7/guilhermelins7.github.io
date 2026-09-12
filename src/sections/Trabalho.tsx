@@ -7,11 +7,12 @@ export default function Trabalho() {
         <div className="flex flex-col md:flex-row justify-between items-end mb-16">
           <div className="max-w-xl">
             <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">
-              Trabalhos em Destaque
+              Trabalhos selecionados
             </h2>
             <p className="text-gray-600 dark:text-gray-400">
-              Uma seleção de projetos que refletem minha paixão por design e
-              desenvolvimento, combinando criatividade e inovação.
+              Uma seleção de projetos públicos dos quais participei, incluindo
+              sites institucionais desenvolvidos em contexto profissional,
+              repositórios no GitHub e projetos autorais disponíveis online.
             </p>
           </div>
           <a
@@ -23,37 +24,51 @@ export default function Trabalho() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           <ProjectCard
-            title="Analytics Dashboard"
-            category="SaaS • Data Visualization"
+            title="Mosten"
+            category="Site institucional • Projeto realizado pela Mosten"
+            href="https://mosten.com"
             media={
-              <img
-                alt="Dashboard Project"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCk4N0c6RaW2u5qk3SAoKMLs0tspeeZCWCfEjYcm8dOwhBwEBlQW1XANwMincHTGOaG5JENeylvZF-Yydew2a4YLDHbAShR7dT53ISIzgk_rSdBAhIPuHi0gKk3bBPi7ytOQjKYseHG_GCjM8kJs4CNYnSXMJB1_T-_MfyNVGlN9oyK8kl2vgAAiY4WCQDi4U-KHhGCjsEQoTNC-oY2JRCMcE3ifUL-6zCYL4y5jRdlwkmShm3rvtMcjJMk9C7tGJ_YvWUS_Oqn91c"
-              />
+              <div className="w-full h-full bg-gray-950 text-white flex flex-col justify-between p-8 transition-transform duration-700 group-hover:scale-105">
+                <span className="text-sm tracking-[0.3em] uppercase text-gray-400">
+                  Tecnologia e inovação
+                </span>
+                <span className="font-display text-5xl font-bold tracking-tight">mosten</span>
+                <span className="material-icons self-end text-4xl text-primary">arrow_outward</span>
+              </div>
             }
           />
           <ProjectCard
-            title="Winzee Chat App"
-            category="Mobile App • Real-time Communication"
+            title="Edenred Mobilidade"
+            category="Site institucional • Projeto realizado pela Mosten"
+            href="https://www.edenredmobilidade.com.br"
             media={
-              <img
-                alt="Abstract App Interface"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY4elXwuFggZw94Vl2SM3ju1n9Z4Frae29a37NC1dkQm-dBfEas6fwYea8238VnMMvPNQFhSLRTrydo02xHoTMI_MZSzV6Z_hxPBaER5GNCYXntlVfyEugAEHvu9jV1xCVoDKrHqRHFwu7kEnqHz6yiMwthlngZipnNKWydARQCdzXbQR8bjW1KYMM4K2Vj93qiafH6ATzVzHgFOKXZxSSLjq0bAUHOemfAmJ3K9rX0lbW9Gj7dOkP7dmGcLQQWnXvyjQ2Tzy4_t4"
-              />
+              <div className="w-full h-full bg-primary text-white flex flex-col justify-between p-8 transition-transform duration-700 group-hover:scale-105">
+                <span className="text-sm tracking-[0.3em] uppercase text-white/70">
+                  Gestão de frotas
+                </span>
+                <span className="font-display text-4xl md:text-5xl font-bold tracking-tight leading-none">
+                  Edenred<br />Mobilidade
+                </span>
+                <span className="material-icons self-end text-4xl">arrow_outward</span>
+              </div>
             }
           />
           <div className="md:mt-12">
             <ProjectCard
-              title="Gemini Clone"
-              category="Web App • AI Integration"
+              title="Almar Comunicação"
+              category="Site institucional • Projeto realizado pela Mosten"
+              href="https://almarcomunicacao.com.br"
               media={
-                <div className="w-full h-full flex items-center justify-center bg-black relative">
-                  <div className="text-white text-6xl font-display">AI</div>
-                  <div className="absolute inset-0 bg-gradient-to-tr from-gray-900 to-gray-800 opacity-90"></div>
-                  <span className="material-icons text-8xl text-white relative z-10 animate-pulse">
-                    smart_toy
+                <div className="w-full h-full flex flex-col justify-between bg-gray-100 dark:bg-surface-dark p-8 transition-transform duration-700 group-hover:scale-105 relative overflow-hidden">
+                  <div className="absolute -right-10 -top-10 size-44 rounded-full bg-primary/20" />
+                  <span className="relative text-sm tracking-[0.3em] uppercase text-gray-500">
+                    Comunicação
+                  </span>
+                  <span className="relative font-display text-4xl md:text-5xl font-bold tracking-tight leading-none text-gray-950 dark:text-white">
+                    almar
+                  </span>
+                  <span className="material-icons relative self-end text-4xl text-primary">
+                    arrow_outward
                   </span>
                 </div>
               }
@@ -61,23 +76,25 @@ export default function Trabalho() {
           </div>
           <div className="md:mt-12">
             <ProjectCard
-              title="Task Master"
-              category="Productivity • React Native"
+              title="Pzaas API Gateway"
+              category="Projeto universitário • Universidade Santa Cecília"
+              href="https://github.com/guilhermelins7/pzaas-api-gateway"
               media={
-                <div className="w-full h-full flex items-center justify-center bg-gray-900 relative">
-                  <div
-                    className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-20"
-                  ></div>
-                  <span className="material-icons text-8xl text-primary relative z-10">layers</span>
+                <div className="w-full h-full flex flex-col justify-between bg-gray-950 text-white p-8 transition-transform duration-700 group-hover:scale-105 relative overflow-hidden">
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--color-primary),_transparent_45%)] opacity-30" />
+                  <span className="relative text-sm tracking-[0.3em] uppercase text-gray-400">
+                    Projeto universitário
+                  </span>
+                  <span className="relative font-display text-4xl md:text-5xl font-bold tracking-tight leading-none">
+                    Pzaas<br />API Gateway
+                  </span>
+                  <span className="material-icons relative self-end text-4xl text-primary">
+                    account_tree
+                  </span>
                 </div>
               }
             />
           </div>
-        </div>
-        <div className="text-center mt-16">
-          <button className="px-6 py-2 border border-gray-300 dark:border-gray-700 rounded-full text-sm font-medium hover:bg-white dark:hover:bg-gray-800 transition-colors shadow-sm cursor-pointer">
-            ● Explore mais
-          </button>
         </div>
       </div>
     </section>
