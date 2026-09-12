@@ -95,7 +95,7 @@ export default function Contato() {
               </a>
               <a
                 className="group flex items-center justify-between gap-4 rounded-full border border-gray-300 bg-white/60 px-4 py-3 font-semibold text-gray-900 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-surface-light dark:border-gray-700 dark:bg-surface-dark/70 dark:text-white dark:hover:border-primary dark:focus-visible:ring-offset-[#150c14]"
-                href="/cv.pdf"
+                href="https://drive.google.com/file/d/1KQb7bWwchuOiyrbzhsaPtU-pXOgfRV9t/view"
                 target="_blank"
                 rel="noopener noreferrer"
               >
