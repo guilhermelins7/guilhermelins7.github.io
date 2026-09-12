@@ -43,38 +43,76 @@ export default function Contato() {
           </a>
         </div>
         <hr className="border-gray-300 dark:border-gray-800 mb-12" />
-        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-8">
           <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400">
             your friendly creative dev,
           </p>
-          <div className="flex gap-4">
-            <a
-              className="w-10 h-10 rounded-full border border-gray-300 dark:border-gray-700 flex items-center justify-center hover:bg-primary hover:border-primary hover:text-white transition-all"
-              href="https://github.com/guilhermelins7"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="GitHub"
+          <div className="w-full lg:w-auto">
+            <p className="mb-3 text-sm font-bold uppercase tracking-widest text-primary lg:text-right">
+              Links profissionais
+            </p>
+            <nav
+              aria-label="Links profissionais"
+              className="grid w-full grid-cols-1 gap-3 sm:grid-cols-3 lg:w-auto"
             >
-              <FaGithub size={18} />
-            </a>
-            <a
-              className="w-10 h-10 rounded-full border border-gray-300 dark:border-gray-700 flex items-center justify-center hover:bg-primary hover:border-primary hover:text-white transition-all"
-              href="https://www.linkedin.com/in/guilherme-lins7/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
-            >
-              <FaLinkedin size={18} />
-            </a>
-            <a
-              className="w-10 h-10 rounded-full bg-white dark:bg-white text-black flex items-center justify-center hover:scale-110 transition-transform"
-              href="/cv.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Download CV"
-            >
-              <FaFileDownload size={18} />
-            </a>
+              <a
+                className="group flex items-center justify-between gap-4 rounded-full border border-gray-300 bg-white/60 px-4 py-3 font-semibold text-gray-900 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-surface-light dark:border-gray-700 dark:bg-surface-dark/70 dark:text-white dark:hover:border-primary dark:focus-visible:ring-offset-[#150c14]"
+                href="https://github.com/guilhermelins7"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="flex items-center gap-3">
+                  <span className="flex h-9 w-9 items-center justify-center rounded-full bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-white">
+                    <FaGithub size={18} aria-hidden="true" />
+                  </span>
+                  GitHub
+                </span>
+                <span
+                  className="material-symbols-outlined text-lg text-gray-400 transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-primary"
+                  aria-hidden="true"
+                >
+                  arrow_outward
+                </span>
+              </a>
+              <a
+                className="group flex items-center justify-between gap-4 rounded-full border border-gray-300 bg-white/60 px-4 py-3 font-semibold text-gray-900 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-surface-light dark:border-gray-700 dark:bg-surface-dark/70 dark:text-white dark:hover:border-primary dark:focus-visible:ring-offset-[#150c14]"
+                href="https://www.linkedin.com/in/guilherme-lins7/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="flex items-center gap-3">
+                  <span className="flex h-9 w-9 items-center justify-center rounded-full bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-white">
+                    <FaLinkedin size={18} aria-hidden="true" />
+                  </span>
+                  LinkedIn
+                </span>
+                <span
+                  className="material-symbols-outlined text-lg text-gray-400 transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-primary"
+                  aria-hidden="true"
+                >
+                  arrow_outward
+                </span>
+              </a>
+              <a
+                className="group flex items-center justify-between gap-4 rounded-full border border-gray-300 bg-white/60 px-4 py-3 font-semibold text-gray-900 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-surface-light dark:border-gray-700 dark:bg-surface-dark/70 dark:text-white dark:hover:border-primary dark:focus-visible:ring-offset-[#150c14]"
+                href="/cv.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="flex items-center gap-3">
+                  <span className="flex h-9 w-9 items-center justify-center rounded-full bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-white">
+                    <FaFileDownload size={18} aria-hidden="true" />
+                  </span>
+                  Currículo
+                </span>
+                <span
+                  className="material-symbols-outlined text-lg text-gray-400 transition-colors group-hover:text-primary"
+                  aria-hidden="true"
+                >
+                  download
+                </span>
+              </a>
+            </nav>
           </div>
         </div>
         <div className="mt-20 -mb-12 relative select-none">
