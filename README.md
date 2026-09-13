@@ -68,7 +68,7 @@ O portfólio foi desenvolvido para apresentar informações profissionais de for
 
 ### Pré-requisitos
 
-- [Node.js](https://nodejs.org/) 20 ou superior
+- [Node.js](https://nodejs.org/) 24 (recomendado; compatível também com `^20.19.0` ou `>=22.12.0`)
 - npm
 
 ### Instalação
