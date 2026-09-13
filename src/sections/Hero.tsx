@@ -1,3 +1,5 @@
+import profileImage from "../assets/profile.jpg";
+
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center pt-24 overflow-hidden" id="home">
@@ -8,9 +10,9 @@ export default function Hero() {
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="mb-8 relative inline-block">
           <img
-            alt="Profile Portrait"
+            alt="Retrato de Guilherme Lins"
             className="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full border-4 border-white dark:border-gray-800 shadow-2xl mx-auto transition-all duration-500"
-            src="/src/assets/profile.jpg"
+            src={profileImage}
           />
           <div className="absolute bottom-4 right-4 bg-primary text-white p-2 rounded-full shadow-lg">
             <span className="material-icons text-xl">code</span>
