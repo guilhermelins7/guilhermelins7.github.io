@@ -23,9 +23,10 @@ export default function ToggleThemeButton() {
 
   return (
     <button
-      className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors cursor-pointer"
+      className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 dark:focus-visible:ring-offset-background-dark"
       id="theme-toggle"
       onClick={toggleTheme}
+      aria-label="Alternar tema"
     >
       <span className="material-icons text-sm">
         {theme === "dark" ? "light_mode" : "dark_mode"}

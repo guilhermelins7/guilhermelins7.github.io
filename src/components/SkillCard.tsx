@@ -28,7 +28,7 @@ export default function SkillCard({
       className={`bg-gray-50 dark:bg-surface-dark p-6 rounded-2xl border border-gray-100 dark:border-gray-700 hover:border-primary/50 transition-colors group ${className}`}
     >
       <div className="flex items-center gap-3 mb-2">
-        <span className="w-10 h-10 shrink-0 rounded-lg bg-primary/10 text-primary flex items-center justify-center material-symbols-outlined">
+        <span className="material-symbols-outlined !flex w-10 h-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
           {icon}
         </span>
         <h3 className="text-xl font-display font-bold group-hover:text-primary transition-colors">
